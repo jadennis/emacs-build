@@ -48,7 +48,7 @@ jobs:
       # This is the shortest job, but in this case it pulls all MSYS/MINGW64
       - name: Clone Emacs
         if: runner.os == 'Windows'
-        run: .\emacs-build.cmd --clone --repo https://github.com/emacs-mirror/emacs.git --depth 1 --branch emacs-29.1
+        run: .\emacs-build.cmd --branch emacs-29.1 --clone --repo https://github.com/emacs-mirror/emacs.git --depth 1 
 
       - name: Clone Emacs
         if: runner.os != 'Windows'
