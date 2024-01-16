@@ -27,7 +27,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       MSYS2_DIR: C:\msys64
-      EMACS_REPO: https://github.com/kiennq/emacs.git
+      EMACS_REPO: https://github.com/emacs-mirror/emacs.git
 
     defaults:
       run:
