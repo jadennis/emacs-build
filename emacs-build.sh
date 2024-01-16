@@ -177,6 +177,7 @@ function action0_clean_rest ()
 
 function action0_clone ()
 {
+    echo emacs_source_dir $emacs_source_dir
     clone_repo "$emacs_branch" "$emacs_repo" "$emacs_source_dir" "$emacs_branch_name" "$emacs_depth"
     if test "$emacs_apply_patches" = "yes"; then
         apply_patches "$emacs_source_dir" || true
