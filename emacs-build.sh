@@ -512,7 +512,7 @@ if test "$emacs_slim_build" = "yes"; then
     dependency_exclusions="$dependency_slim_exclusions"
 fi
 if test -z "$emacs_branch"; then
-    emacs_branch="master"
+    emacs_branch="emacs-29_1"
 fi
 actions=`unique_list $actions`
 if test -z "$actions"; then
