@@ -200,6 +200,7 @@ function action1_ensure_packages ()
 function action2_build ()
 {
     echo start building
+    emacs_source_dir="$emacs_build_git_dir/$emacs_branch_name"
     echo emacs_source_dir $emacs_source_dir
     rm -f "$emacs_install_dir/bin/emacs.exe"
     if prepare_source_dir $emacs_source_dir \
